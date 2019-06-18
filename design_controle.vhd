@@ -1,6 +1,6 @@
 --Ramon Ferreira 
 --junho/2019
---
+
 -- Bloco de controle.
 
 entity controle is
