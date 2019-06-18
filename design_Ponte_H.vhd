@@ -5,19 +5,12 @@
 
 entity FFJK_ponteH is 
 port (J0, J1, J2, K0, K1, K2, clk: in bit;
-Q0, Q0i, Q1, Q1i, Q2, Q2i, jj2, jj0, kk1: out bit);
+Q0, Q0i, Q1, Q1i, Q2, Q2i: out bit);
 end entity FFJK_ponteH;
 
 architecture comp of FFJK_ponteH is
 
 begin
--- Parte da lógica combinacional
-jj2 <= (Q0 and Q1);
-kk1 <= (Q0 or Q2);
-jj0 <= (Q1i or Q2i);
-J2 <= jj2;
-K1 <= kk1;
-J0 <= jj0;
 -- Sinais dos três flipsflops
 signal J0x, J1x, J2x, K0x, K1x, K2x, clk
 Q0x, Q0ix, Q1x, Q1ix, Q2x, Q2ix: bit;
