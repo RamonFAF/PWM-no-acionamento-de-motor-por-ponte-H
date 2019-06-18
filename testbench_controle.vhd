@@ -17,7 +17,7 @@ signal btld_in, bts_in, btvel_in, btf_in, s1_out, s2_out, s3_out, s4_out : bit;
 
 begin
 
-COMPORTAMENTO: controle port map(btLD_in, btS_in, btVEL_in,BtF_in: BIT);
+PORRA: controle port map(btld_in,bts_in,btvel_in,btf_in,s1_out,s2_out,s3_out,s4_out: bit);
 
 process 
 begin
